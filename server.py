@@ -32,5 +32,4 @@ def predict_stock_price():
 
 
 if __name__=="__main__":
-    print("Starting Python Flask Server for Stock Price Prediction")
     app.run()

@@ -21,4 +21,4 @@ fi
 $VIRTUALENV/bin/pip install -r requirements.txt
 
 #run a python server
-$VIRTUALENV/bin/python3 server/server.py
+$VIRTUALENV/bin/python3 server.py
