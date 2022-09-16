@@ -3,7 +3,7 @@ function onClickedEstimatedPrice(){
   var date1 = document.getElementById('date')
   var estP = document.getElementById("uiEstimatedPrice")
 
-  var url = 'http://127.0.0.1:5000/predict_stock_price'
+  var url = 'https://noble-honey-kilometer.glitch.me/predict_stock_price'
 
   $.post(url, {
       date : date1.value
