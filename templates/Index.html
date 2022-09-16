@@ -4,10 +4,154 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Stock Market Prediction</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="js/app.js" type="text/javascript"></script> -->
 </head>
 <body>
-    <h1>Hello World!!</h1>
-    <h2>Current time is {{ now }}</h2>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><span>Stock Price Prediction</span></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutus">About Project</a></li>
+                <li><a href="#aboutyash">About Us</a></li>
+                <li><a href="#predict">Predict Now</a></li>
+                <li><span class="material-icons">density_medium</span></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="console-container">
+            <span id="text"></span>
+            <div class="console-underscore" id="console">
+                &#95;
+            </div>
+        </div>
+    </header>
+
+    <div class="container2">
+        <div class="content">
+            <div class="slideshow">
+                <!-- carousel control buttons -->
+                <button class="slide-btn slide-btn-1"></button>
+                <button class="slide-btn slide-btn-2"></button>
+                <button class="slide-btn slide-btn-3"></button>
+                <div class="slideshow-wrapper">
+                    <div class="slide">
+                        <img class="slide-img" src="images/img1.jpg">
+                    </div>
+                    <div class="slide">
+                        <img class="slide-img" src="images/img2.jpg">
+                    </div>
+                    <div class="slide">
+                        <img class="slide-img" src="images/img3.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="aboutus" class="project_description">
+        <center>
+            <div class="head">&#10070; About Project &#10070;</div><br><br>
+        </center>
+        <div class="pcontent">
+            <p>This project is made during internship in <b>&ldquo; AI / ML using Python ( Project Based
+                    )&rdquo;</b>.<br>&raquo;
+                This Project uses various Machine Learning models such as ..,..,.., etc.<br>&raquo;
+                This uses Pandas and Numpy to explore, manipulate data in form of Series,
+                &nbsp;&nbsp;&nbsp;&nbsp;DataFrame and to do scientific calculations.<br>&raquo;
+                This uses libraries such as Matplotlib, Numpy for visualizing data.<br>&raquo;
+                And at last Python framework Django has been used to take inputs from user and &nbsp;&nbsp;&nbsp;output
+                is predicted using
+                model saved in pickel format.
+            </p>
+            <br><br>
+        </div>
+        <center>
+            <div class="head">
+                Lifecycle of the Project
+            </div>
+            <br>
+            <div class="image">
+                <img src="images/img4.png">
+            </div>
+        </center>
+    </section>
+
+    <section id="predict">
+        <center>
+            <h1>&#10070;Predict Stock Values&#10070;</h1>
+            <br><br>
+            <form action="" class="form">
+                <span>Date : </span>
+                <input type="date" name="" id="date" class="date">
+                <br>
+                <button type="button" class="submit" onclick="onClickedEstimatedPrice()">Estimate Price</button>
+                <div class="result" id="uiEstimatedPrice">
+                    <h2></h2>
+                </div>
+            </form>
+        </center>
+    </section>
+
+
+    <section id="aboutyash" class="project_description">
+        <center>
+            <div class="head2">
+                &#10070; About Us &#10070;
+            </div>
+            &#11049;&#11045;&#10070;&#11045;&#11049;
+            <br><br>
+            <div class="template">
+                <div class="vert">
+                    <div class="img">
+                        <img src="images/IMG_20220428_144145_242.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Yash Sharma</h2>
+                        <h3>20001001130</h3>
+                        <h3>B. Tech. CSE</h3>
+                        <div class="icons">
+                            <a href="mailto:yashsharma29103@gmail.com">
+                                <i class="bi bi-envelope-fill" style="color: cornflowerblue;"></i>
+                            </a>&#9679;
+                            <a href="https://www.linkedin.com/in/yash-sharma-real-one">
+                                <i class="bi bi-linkedin" style="color: cornflowerblue;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="template2">
+                <div class="vert">
+                    <div class="img">
+                        <img src="images/nt.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Nitin Nischal</h2>
+                        <h3>20001001077</h3>
+                        <h3>B. Tech. CSE</h3>
+                        <div class="icons">
+                            <a href="mailto:yashsharma29103@gmail.com">
+                                <i class="bi bi-envelope-fill" style="color: cornflowerblue;"></i>
+                            </a>&#9679;
+                            <a href="https://www.linkedin.com/in/yash-sharma-real-one">
+                                <i class="bi bi-linkedin" style="color: cornflowerblue;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+        </center>
+    </section>
+
 </body>
+<script src="/client/js/app.js"></script>
 </html>
