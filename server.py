@@ -4,10 +4,15 @@ Created on Wed Sep 7 18:13:31 2022
 @author: YASH_SHARMA
 """
 
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 import util
 
 app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return render_template('Index.html')
+
 
 @app.route('/get_stock_names')
 def get_stock_names():
