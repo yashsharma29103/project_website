@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
+}
+
+.container{
+    background-color: rgb(97, 97, 221);
+}
+
+.container ul{
+    display: inline-flex;
+}
+
+.container ul li{
+    padding: 15px;
+    line-height: 25px;
+    color: white;
+}
+
+.container ul li a{
+    color: white;
+    font-size: 20px;
+}
+
+.container ul li:nth-child(2):hover, .container ul li:nth-child(3):hover, .container ul li:nth-child(4):hover{
+    font-size: 25px;
+    transition: .1s ease;
+    border-bottom: darkblue solid 5px;
+}
+
+.container span{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.container .material-icons{
+    visibility: hidden;
+}
+
+.item .img{
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+
+.hidden {
+  opacity:0;
+}
+.console-container {
+  font-family:monospace;
+  font-size:3.8em;
+  text-align:center;
+  padding-top: 30px;
+  height:180px;
+  width:100%;
+  display:block;
+  position:relative;
+  color:cornflowerblue;
+}
+.console-underscore {
+   display:inline-block;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    height: 600px;
+}
+
+.content {
+    position: relative;
+}
+
+.slideshow {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slideshow-wrapper {
+    overflow: hidden;
+    display: flex;
+    width: 300%;
+    height: 100%;
+    position: relative;
+    animation: slideshow 20s infinite;
+ }
+
+.slide {
+    width: 100%;
+    height: 100%;
+}
+
+.slide-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+@keyframes slideshow {
+    0%  { left: 0; }
+    10% { left: 0; }
+    20% { left: -100%; }
+    33% { left: -100%; }
+    43% { left: -200%; }
+    56% { left: -200%; }
+    66% { left: -100%; }
+    77% { left: -100%; }
+    90% { left: 0%; }
+    100% { left: 0%; }
+}
+
+.slide-btn {
+    border-radius: 50%;
+    border: .2rem solid cornflowerblue;
+    width: 1.2rem;
+    height: 1.2rem;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 70;
+}
+
+.slide-btn-1 {
+    left: 45%;
+}
+.slide-btn-2 {
+    left: 50%;
+}
+.slide-btn-3 {
+    left: 55%;
+}
+
+.slide-btn-1:focus~.slideshow-wrapper {
+    animation: none;
+    left: 0;
+}
+.slide-btn-2:focus~.slideshow-wrapper {
+    animation: none;
+    left: -100%;
+}
+.slide-btn-3:focus~.slideshow-wrapper {
+    animation: none;
+    left: -200%;
+}
+
+.slide-btn:focus {
+    background-color: navy;
+}
+
+
+.project_description{
+    margin: 100px;
+    border-radius: 10px;
+    background: white;
+    padding: 100px;
+    font-size: 30px;
+    color: black;
+}
+
+.head{
+    font-size: 40px;
+    color: dodgerblue;
+    font-weight: bolder;
+    text-decoration: underline solid 3px;
+}
+
+.image img{
+    width: 60vw;
+    height: auto;
+}
+
+.head2{
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.template .vert{
+    display: flex;
+    border-radius: 10px;
+    border-left: solid 1px black;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    box-shadow: inset 4px -4px 2px grey;
+}
+
+.img img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+.img{
+    flex-basis: 1 400px;
+}
+
+.content h2, .content h3{
+    color: navy;
+}
+
+.content{
+    flex: 2 500px;
+}
+
+.icons{
+    color: cornflowerblue;
+}
+
+.template2{
+    margin-top: 60px;
+}
+
+.template2 .vert{
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 10px;
+    border-top: solid 1px black;
+    padding-right: 60px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    box-shadow: inset -4px 4px 2px grey;
+}
+
+#predict{
+    margin: 100px;
+    border-radius: 10px;
+    background: white;
+    padding: 100px;
+    font-size: 30px;
+    color: black;
+}
+
+#predict h1{
+    font-size: 50px;
+}
+
+#predict span{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+button{
+    width: 30%;
+    height: 35px;
+    background-color: lightblue;
+    color: navy;
+    border: cornflowerblue 1px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+input{
+    margin-left: 50px;
+    font-size: 20px;
+    color: black;
+}
+
+.result h2{
+    color: navy;
+    margin-top: 20px;
+}
