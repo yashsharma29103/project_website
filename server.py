@@ -35,6 +35,5 @@ def predict_stock_price():
     return response
 
 
-
 if __name__=="__main__":
     app.run()

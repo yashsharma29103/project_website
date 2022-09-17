@@ -3,7 +3,7 @@ function onClickedEstimatedPrice(){
   var date1 = document.getElementById('date')
   var estP = document.getElementById("uiEstimatedPrice")
 
-  var url = 'https://noble-honey-kilometer.glitch.me/predict_stock_price'
+  var url = 'http://127.0.0.1:5000/predict_stock_price'
 
   $.post(url, {
       date : date1.value
@@ -57,7 +57,7 @@ function consoleText(words, id, colors) {
   window.setInterval(function () {
     if (visible === true) {
       con = document.getElementById('d1')
-      con.className = 'console-underscore hidden'
+      con.className = ['console-underscore hidden']
       visible = false;
 
     } else {

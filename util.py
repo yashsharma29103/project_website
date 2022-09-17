@@ -15,8 +15,4 @@ def get_estimated_price(date):
         model = pickle.load(f)
     pr = model.predict(np.array([ordi]).reshape(-1,1))
     flag=0
-    return [pr,flag]
-
-
-
-        
+    return [pr,flag]     
