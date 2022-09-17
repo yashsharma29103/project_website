@@ -26,12 +26,11 @@ def get_stock_names():
 @app.route('/predict_stock_price', methods=['POST'])
 def predict_stock_price():
     date = request.form['date']
-    arr = util.get_estimated_price(date)
+    pr = util.get_estimated_price(date)
     response = jsonify({
-        'estimated_price' : str(arr[0][0])
+        'estimated_price' : str(pr)
     })
     response.headers.add('Access-Control-Allow-Origin','*')
-    
     return response
 
 
